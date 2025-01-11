@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColdBlue RP</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1327630241308348509/1327724661240238110/CodeBlue_RP_FivePD.png?ex=67841b73&is=6782c9f3&hm=cac90fb75576cb40cff2c4420fbf62bec1404272d8c9d31f4c47a92b473781cc&" type="image/png">
+    <style>
+        /* Ogólne style */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+            overflow: hidden;
+        }
+
+        /* Tło z obrazem */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://gameplay.pl/galeria/ilustracja/145_139855988.png') no-repeat center center/cover;
+            z-index: -1;
+            filter: brightness(0.6);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Kontener głównej zawartości */
+        .content {
+            text-align: center;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0, 0, 128, 0.7);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Nagłówek */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Sekcja z zasadami */
+        .rules h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+        }
+
+        .rules ol {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        .rules li {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Stopka */
+        footer {
+            margin-top: 2rem;
+        }
+
+        .discord-link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            background: #5865F2;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .discord-link img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .discord-link:hover {
+            background: #4854cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <header>
+                <h1>Welcome to ColdBlue RP</h1>
+                <p>Follow these rules to ensure a fair and enjoyable experience for everyone.</p>
+            </header>
+
+            <section class="rules">
+                <h2>RP Rules</h2>
+                <ol>
+                    <li>Respect all players and admins.</li>
+                    <li>No metagaming or powergaming.</li>
+                    <li>Use proper roleplay at all times.</li>
+                    <li>No harassment, discrimination, or toxicity.</li>
+                    <li>Follow the server's economy and rules.</li>
+                    <li>Do not exploit glitches or bugs.</li>
+                    <li>Keep IC (in-character) and OOC (out-of-character) separate.</li>
+                    <li>No random deathmatching (RDM) or vehicle deathmatching (VDM).</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a href="https://discord.gg/yA2JERVuv3" class="discord-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/906/906361.png" alt="Discord Icon">
+                    Join us on Discord
+                </a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
